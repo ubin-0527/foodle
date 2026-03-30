@@ -1,0 +1,158 @@
+.form-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding: 0 16px 40px;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+}
+
+.form-header h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #222;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 4px 8px;
+  color: #333;
+  border-radius: 8px;
+}
+
+.back-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.field-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #555;
+  margin: 16px 0 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.field-input {
+  display: block;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 12px;
+  font-size: 15px;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.field-input:focus {
+  border-color: #2e7d32;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.category-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 4px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.category-chip.selected {
+  border-color: #2e7d32;
+  background: #e8f5e9;
+}
+
+.chip-emoji {
+  font-size: 24px;
+  margin-bottom: 2px;
+}
+
+.chip-label {
+  font-size: 10px;
+  font-weight: 600;
+  color: #555;
+}
+
+.storage-toggle,
+.expiry-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.storage-opt,
+.expiry-opt {
+  flex: 1;
+  padding: 10px;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.storage-opt.active,
+.expiry-opt.active {
+  border-color: #2e7d32;
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.auto-date-display {
+  padding: 12px 14px;
+  background: #fff;
+  border-radius: 12px;
+  border: 1.5px solid #ddd;
+  margin-top: 4px;
+}
+
+.auto-date-display p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.auto-date-display .hint {
+  color: #999;
+  font-style: italic;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  margin-top: 24px;
+  border: none;
+  border-radius: 14px;
+  background: #2e7d32;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.submit-btn:hover {
+  background: #256e2a;
+}

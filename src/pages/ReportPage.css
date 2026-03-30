@@ -1,0 +1,166 @@
+.report-page {
+  min-height: 100vh;
+  background: #f5f7fa;
+  padding: 0 16px 90px;
+}
+
+.report-header {
+  padding: 16px 0 8px;
+}
+
+.report-header h1 {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0;
+  color: #2e7d32;
+}
+
+.empty-report {
+  text-align: center;
+  padding: 60px 20px;
+  color: #777;
+}
+
+.empty-report .empty-icon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.empty-report .empty-hint {
+  font-size: 13px;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+.stat-cards {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.stat-card {
+  flex: 1;
+  border-radius: 16px;
+  padding: 20px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.consumed-card { background: #e8f5e9; }
+.wasted-card { background: #ffebee; }
+
+.stat-number {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.consumed-card .stat-number { color: #2e7d32; }
+.wasted-card .stat-number { color: #c62828; }
+
+.stat-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #666;
+}
+
+.stat-pct {
+  font-size: 14px;
+  font-weight: 700;
+  color: #888;
+}
+
+.progress-bar-container {
+  margin: 16px 0;
+}
+
+.progress-bar {
+  display: flex;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #e0e0e0;
+}
+
+.bar-consumed { background: #4caf50; transition: width 0.4s; }
+.bar-wasted { background: #f44336; transition: width 0.4s; }
+
+.progress-legend {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot.green { background: #4caf50; }
+.dot.red { background: #f44336; }
+
+.history-section {
+  margin-top: 20px;
+}
+
+.history-section h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.history-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.history-name {
+  font-weight: 600;
+  flex: 1;
+  color: #333;
+}
+
+.history-storage {
+  color: #999;
+  text-transform: capitalize;
+  margin: 0 8px;
+  font-size: 12px;
+}
+
+.history-outcome {
+  font-weight: 700;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 8px;
+}
+
+.history-outcome.consumed { background: #e8f5e9; color: #2e7d32; }
+.history-outcome.wasted { background: #ffebee; color: #c62828; }
+
+.history-date {
+  color: #aaa;
+  font-size: 11px;
+  margin-left: 8px;
+}
