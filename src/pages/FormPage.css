@@ -1,6 +1,6 @@
 .form-page {
   min-height: 100vh;
-  background: #f5f7fa;
+  background: var(--bg);
   padding: 0 16px 40px;
 }
 
@@ -14,7 +14,7 @@
 .form-header h1 {
   font-size: 20px;
   margin: 0;
-  color: #222;
+  color: var(--text);
 }
 
 .back-btn {
@@ -23,7 +23,7 @@
   font-size: 22px;
   cursor: pointer;
   padding: 4px 8px;
-  color: #333;
+  color: var(--text);
   border-radius: 8px;
 }
 
@@ -35,10 +35,11 @@
   display: block;
   font-size: 13px;
   font-weight: 700;
-  color: #555;
+  color: var(--text);
   margin: 16px 0 6px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  opacity: 0.6;
 }
 
 .field-input {
@@ -49,13 +50,14 @@
   border-radius: 12px;
   font-size: 15px;
   background: #fff;
+  color: var(--text);
   outline: none;
   transition: border-color 0.2s;
   box-sizing: border-box;
 }
 
 .field-input:focus {
-  border-color: #2e7d32;
+  border-color: var(--green);
 }
 
 .category-grid {
@@ -77,8 +79,14 @@
 }
 
 .category-chip.selected {
-  border-color: #2e7d32;
-  background: #e8f5e9;
+  border-color: var(--green);
+  background: var(--green);
+  color: #fff;
+}
+
+.category-chip.selected .chip-label {
+  color: #fff;
+  opacity: 1;
 }
 
 .chip-emoji {
@@ -89,7 +97,8 @@
 .chip-label {
   font-size: 10px;
   font-weight: 600;
-  color: #555;
+  color: var(--text);
+  opacity: 0.7;
 }
 
 .storage-toggle,
@@ -107,16 +116,16 @@
   background: #fff;
   font-size: 13px;
   font-weight: 600;
-  color: #555;
+  color: var(--text);
   cursor: pointer;
   transition: all 0.15s;
 }
 
 .storage-opt.active,
 .expiry-opt.active {
-  border-color: #2e7d32;
-  background: #e8f5e9;
-  color: #2e7d32;
+  border-color: var(--green);
+  background: var(--green);
+  color: #fff;
 }
 
 .auto-date-display {
@@ -130,11 +139,12 @@
 .auto-date-display p {
   margin: 0;
   font-size: 14px;
-  color: #333;
+  color: var(--text);
 }
 
 .auto-date-display .hint {
-  color: #999;
+  color: var(--text);
+  opacity: 0.5;
   font-style: italic;
 }
 
@@ -145,14 +155,14 @@
   margin-top: 24px;
   border: none;
   border-radius: 14px;
-  background: #2e7d32;
-  color: #fff;
+  background: #fff;
+  color: var(--green);
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.2s;
+  transition: opacity 0.2s;
 }
 
 .submit-btn:hover {
-  background: #256e2a;
+  opacity: 0.9;
 }

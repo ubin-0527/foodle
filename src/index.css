@@ -1,3 +1,11 @@
+:root {
+  --bg: #f7eedc;
+  --red: #da4018;
+  --yellow: #e8c06c;
+  --green: #3d7764;
+  --text: #232323;
+}
+
 *,
 *::before,
 *::after {
@@ -9,8 +17,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f5f7fa;
-  color: #222;
+  background: #2a2a2a;
+  color: var(--text);
 }
 
 button {
@@ -24,4 +32,9 @@ input {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Coiny', cursive;
+  font-weight: 400;
 }

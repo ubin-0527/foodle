@@ -10,7 +10,7 @@
 }
 
 .modal-content {
-  background: #fff;
+  background: var(--bg);
   border-radius: 16px;
   padding: 24px 20px 18px;
   max-width: 320px;
@@ -21,13 +21,14 @@
 .modal-content h3 {
   margin: 0 0 8px;
   font-size: 17px;
-  color: #222;
+  color: var(--text);
 }
 
 .modal-content p {
   margin: 0 0 18px;
   font-size: 14px;
-  color: #666;
+  color: var(--text);
+  opacity: 0.6;
 }
 
 .modal-actions {
@@ -41,8 +42,8 @@
   padding: 12px;
   border: none;
   border-radius: 10px;
-  background: #4caf50;
-  color: #fff;
+  background: #fff;
+  color: var(--green);
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -53,8 +54,8 @@
   padding: 12px;
   border: none;
   border-radius: 10px;
-  background: #f44336;
-  color: #fff;
+  background: #fff;
+  color: var(--red);
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -63,7 +64,8 @@
 .btn-cancel {
   background: none;
   border: none;
-  color: #999;
+  color: var(--text);
+  opacity: 0.4;
   font-size: 13px;
   cursor: pointer;
   padding: 6px;

@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import BottomNav from './components/BottomNav';
+import SplashScreen from './components/SplashScreen';
 import StoragePage from './pages/StoragePage';
 import AddItemPage from './pages/AddItemPage';
 import EditItemPage from './pages/EditItemPage';
@@ -8,6 +10,10 @@ import ReportPage from './pages/ReportPage';
 import './App.css';
 
 function App() {
+  const [showSplash, setShowSplash] = useState(true);
+
+  if (showSplash) return <SplashScreen onStart={() => setShowSplash(false)} />;
+
   return (
     <div className="app-shell">
       <Routes>

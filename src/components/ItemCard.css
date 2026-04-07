@@ -1,6 +1,5 @@
 .item-card {
-  background: rgba(255, 255, 255, 0.88);
-  backdrop-filter: blur(6px);
+  background: #fff;
   border-radius: 14px;
   padding: 12px 10px 10px;
   display: flex;
@@ -32,9 +31,9 @@
   flex-shrink: 0;
 }
 
-.expiry-dot.fresh { background: #4caf50; }
-.expiry-dot.warning { background: #ff9800; }
-.expiry-dot.expired { background: #f44336; }
+.expiry-dot.fresh { background: var(--green); }
+.expiry-dot.warning { background: var(--yellow); }
+.expiry-dot.expired { background: var(--red); }
 
 .card-emoji {
   font-size: 36px;
@@ -45,7 +44,7 @@
 .card-name {
   font-size: 13px;
   font-weight: 600;
-  color: #333;
+  color: var(--text);
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -59,6 +58,6 @@
   margin-top: 2px;
 }
 
-.card-expiry.fresh { color: #4caf50; }
-.card-expiry.warning { color: #e65100; }
-.card-expiry.expired { color: #c62828; }
+.card-expiry.fresh { color: var(--green); }
+.card-expiry.warning { color: var(--yellow); }
+.card-expiry.expired { color: var(--red); }

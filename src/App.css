@@ -1,6 +1,9 @@
 .app-shell {
-  max-width: 430px;
+  width: 100%;
+  max-width: 402px;
   margin: 0 auto;
   position: relative;
   min-height: 100vh;
+  background: var(--bg);
+  overflow: hidden;
 }

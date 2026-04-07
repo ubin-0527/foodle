@@ -1,6 +1,6 @@
 .detail-page {
   min-height: 100vh;
-  background: #f5f7fa;
+  background: var(--bg);
   padding: 0 16px 40px;
 }
 
@@ -14,7 +14,7 @@
 .detail-header h1 {
   font-size: 20px;
   margin: 0;
-  color: #222;
+  color: var(--text);
 }
 
 .detail-card {
@@ -34,7 +34,7 @@
 .detail-name {
   font-size: 22px;
   margin: 0 0 8px;
-  color: #222;
+  color: var(--text);
 }
 
 .detail-badge {
@@ -47,9 +47,9 @@
   letter-spacing: 0.5px;
 }
 
-.detail-badge.fresh { background: #e8f5e9; color: #2e7d32; }
-.detail-badge.warning { background: #fff3e0; color: #e65100; }
-.detail-badge.expired { background: #ffebee; color: #c62828; }
+.detail-badge.fresh { background: #e8f5e9; color: var(--green); }
+.detail-badge.warning { background: #fff8e1; color: #a07800; }
+.detail-badge.expired { background: #ffece6; color: var(--red); }
 
 .detail-info {
   margin: 20px 0;
@@ -65,17 +65,18 @@
 }
 
 .info-label {
-  color: #888;
+  color: var(--text);
+  opacity: 0.6;
 }
 
 .info-value {
   font-weight: 600;
-  color: #333;
+  color: var(--text);
 }
 
-.info-value.expired { color: #c62828; }
-.info-value.warning { color: #e65100; }
-.info-value.fresh { color: #2e7d32; }
+.info-value.expired { color: var(--red); }
+.info-value.warning { color: #a07800; }
+.info-value.fresh { color: var(--green); }
 
 .detail-actions {
   display: flex;
@@ -86,10 +87,10 @@
 .edit-btn {
   flex: 1;
   padding: 12px;
-  border: 2px solid #2e7d32;
+  border: 2px solid var(--green);
   border-radius: 12px;
-  background: none;
-  color: #2e7d32;
+  background: #fff;
+  color: var(--green);
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
@@ -100,8 +101,8 @@
   padding: 12px;
   border: none;
   border-radius: 12px;
-  background: #f44336;
-  color: #fff;
+  background: #fff;
+  color: var(--red);
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;

@@ -1,8 +1,10 @@
 .bottom-nav {
   position: fixed;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 402px;
   display: flex;
   background: #fff;
   border-top: 1px solid #e0e0e0;
@@ -17,13 +19,15 @@
   align-items: center;
   padding: 10px 0 8px;
   text-decoration: none;
-  color: #999;
+  color: var(--text);
+  opacity: 0.4;
   font-size: 11px;
-  transition: color 0.2s;
+  transition: color 0.2s, opacity 0.2s;
 }
 
 .nav-item.active {
-  color: #2e7d32;
+  color: var(--green);
+  opacity: 1;
 }
 
 .nav-icon {
@@ -32,5 +36,7 @@
 }
 
 .nav-label {
-  font-weight: 600;
+  font-family: 'Coiny', cursive;
+  font-weight: 400;
+  font-size: 12px;
 }
