@@ -1,11 +1,11 @@
 .report-page {
   min-height: 100vh;
   background: var(--bg);
-  padding: 0 16px 90px;
+  padding: 0 16px 88px;
 }
 
 .report-header {
-  padding: 16px 0 8px;
+  padding: 16px 0;
 }
 
 .report-header h1 {
@@ -17,7 +17,7 @@
 
 .empty-report {
   text-align: center;
-  padding: 60px 20px;
+  padding: 56px 24px;
   color: var(--text);
   opacity: 0.5;
 }
@@ -42,7 +42,7 @@
 .stat-card {
   flex: 1;
   border-radius: 16px;
-  padding: 20px 16px;
+  padding: 24px 16px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -81,7 +81,7 @@
 .progress-bar {
   display: flex;
   height: 12px;
-  border-radius: 6px;
+  border-radius: 8px;
   overflow: hidden;
   background: #e0e0e0;
 }
@@ -133,9 +133,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 14px;
+  padding: 8px 16px;
   background: var(--bg);
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: 13px;
 }
 
@@ -156,7 +156,7 @@
 .history-outcome {
   font-weight: 700;
   font-size: 11px;
-  padding: 2px 8px;
+  padding: 4px 8px;
   border-radius: 8px;
 }
 

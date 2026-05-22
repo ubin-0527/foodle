@@ -19,8 +19,8 @@
 
 .detail-card {
   background: #fff;
-  border-radius: 20px;
-  padding: 28px 20px 20px;
+  border-radius: 16px;
+  padding: 24px;
   text-align: center;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
@@ -39,8 +39,8 @@
 
 .detail-badge {
   display: inline-block;
-  padding: 4px 14px;
-  border-radius: 20px;
+  padding: 8px 16px;
+  border-radius: 16px;
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
@@ -59,7 +59,7 @@
 .info-row {
   display: flex;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 8px 0;
   border-bottom: 1px solid #f0f0f0;
   font-size: 14px;
 }
@@ -88,7 +88,7 @@
   flex: 1;
   padding: 12px;
   border: 2px solid var(--green);
-  border-radius: 12px;
+  border-radius: 16px;
   background: #fff;
   color: var(--green);
   font-size: 15px;
@@ -100,7 +100,7 @@
   flex: 1;
   padding: 12px;
   border: none;
-  border-radius: 12px;
+  border-radius: 16px;
   background: #fff;
   color: var(--red);
   font-size: 15px;
